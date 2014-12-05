@@ -7,26 +7,35 @@ package berger_may_muehlehner;
  */
 public class Raum {
 	
+	private double a, r, h;
+	
+	/**
+	 * Konstruktor
+	 */
+	public Raum(double a, double r, double h){
+		this.a=a;
+		this.r=r;
+		this.h=h;
+	}
+	
 	/**
 	 * Berechnung einer Pyramide
 	 */
-	public static double pyramide(double seite, double hoehe){
-		return (seite*seite*hoehe)/3;
+	public double pyramide(){
+		return (a*a*h)/3;
 	}
 	
-	public double kegel(double grundf, double hoehe){
-		return (1/3)*grundf*hoehe;
-	}
-
-	public double quader(double seite){
-		return seite*seite*seite;
+	/**
+	 * Berechnung eines Kegels
+	 */
+	public double kegel(){
+		return (1/3)*(r*r*Math.PI)*h;
 	}
 
 	/**
-	 * main-Methode
+	 * Berechnung eines Quaders
 	 */
-	public static void main(String[] args) {
-		System.out.println(pyramide(3,2));
+	public double quader(){
+		return a*a*a;
 	}
-	
 }
