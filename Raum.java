@@ -20,7 +20,7 @@ public class Raum {
 	}
 	
 	/**
-	 * Konstruktor
+	 * Konstruktor fuer alle benoetigten Attribute
 	 * @param a Seite a
 	 * @param b Seite b
 	 * @param r Radius
@@ -34,7 +34,7 @@ public class Raum {
 	}
 	
 	/**
-	 * Konstruktor
+	 * Konstruktor fuer Pyramide und Quader
 	 * @param a Seite a
 	 * @param b Seite b
 	 * @param h Hoehe
@@ -43,6 +43,18 @@ public class Raum {
 		this.a=a;
 		this.b=b;
 		this.r=0;
+		this.h=h;
+	}
+	
+	/**
+	 * Konstruktor fuer Kegel
+	 * @param r Radius
+	 * @param h Hoehe
+	 */
+	public Raum(double r, double h){
+		this.a=0;
+		this.b=0;
+		this.r=r;
 		this.h=h;
 	}
 	
