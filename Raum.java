@@ -42,6 +42,7 @@ public class Raum {
 	public Raum(double a, double b, double h){
 		this.a=a;
 		this.b=b;
+		this.r=0;
 		this.h=h;
 	}
 	
