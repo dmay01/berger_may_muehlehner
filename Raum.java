@@ -21,6 +21,10 @@ public class Raum {
 	
 	/**
 	 * Konstruktor
+	 * @param a Seite a
+	 * @param b Seite b
+	 * @param r Radius
+	 * @param h Hoehe
 	 */
 	public Raum(double a, double b, double r, double h){
 		this.a=a;
@@ -31,6 +35,9 @@ public class Raum {
 	
 	/**
 	 * Konstruktor
+	 * @param a Seite a
+	 * @param b Seite b
+	 * @param h Hoehe
 	 */
 	public Raum(double a, double b, double h){
 		this.a=a;
@@ -40,13 +47,15 @@ public class Raum {
 	
 	/**
 	 * Berechnung einer Pyramide
+	 * @return Rauminhalt einer Pyramide
 	 */
 	public double pyramide(){
-		return (a*a*h)/3;
+		return (a*b*h)/3;
 	}
 	
 	/**
 	 * Berechnung eines Kegels
+	 * @return Rauminhalt eines Kegels
 	 */
 	public double kegel(){
 		return (1/3)*(r*r*Math.PI)*h;
@@ -54,6 +63,7 @@ public class Raum {
 
 	/**
 	 * Berechnung eines Quaders
+	 * @return Rauminhalt eines Quaders
 	 */
 	public double quader(){
 		return a*b*h;
