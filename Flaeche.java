@@ -27,6 +27,8 @@ public class Flaeche {
 	public Flaeche(double a, double b) {
 		this.a = a;
 		this.b = b;
+		c=0;
+		r=0;
 	}
 
 	/**
@@ -39,6 +41,7 @@ public class Flaeche {
 		this.a = a;
 		this.b = b;
 		this.c = c;
+		r=0;
 	}
 
 	/**
@@ -47,6 +50,9 @@ public class Flaeche {
 	 */
 	public Flaeche(double r) {
 		this.r = r;
+		a=0;
+		b=0;
+		c=0;
 	}
 
 	/**
