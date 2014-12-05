@@ -1,20 +1,21 @@
 package berger_may_muehlehner;
 
 /**
- * @author Mühlehner Moritz
- *
+ * Klasse zur Berechnung von Flaechen
+ * @author Muehlehner Moritz
+ * @version 1.0
  */
 public class Flaeche {
 	private double a, b, c, r;
 	/**
-	 * Konstruktor für ein Rechteck
+	 * Konstruktor fuer ein Rechteck
 	 */
 	public Flaeche(double a, double b){
 		this.a=a;
 		this.b=b;
 	}
 	/**
-	 * Konstruktor für ein Dreieck
+	 * Konstruktor fuer ein Dreieck
 	 */
 	public Flaeche(double a, double b, double c){
 		this.a=a;
@@ -22,13 +23,13 @@ public class Flaeche {
 		this.c=c;
 	}
 	/**
-	 * Konstruktor für einen Kreis
+	 * Konstruktor fuer einen Kreis
 	 */
 	public Flaeche(double r){
 		this.r=r;
 	}
 	/**
-	 * Konstruktor für ein beliebiges Objekt
+	 * Konstruktor fuer ein beliebiges Objekt
 	 */
 	public Flaeche(double a, double b, double c, double r){
 		this.a=a;
