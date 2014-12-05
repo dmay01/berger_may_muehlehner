@@ -21,7 +21,8 @@ public class Flaeche {
 
 	/**
 	 * Konstruktor fuer ein Rechteck
-	 * @param double a, double b
+	 * @param a Seite a
+	 * @param b Seite b
 	 */
 	public Flaeche(double a, double b) {
 		this.a = a;
@@ -30,7 +31,9 @@ public class Flaeche {
 
 	/**
 	 * Konstruktor fuer ein Dreieck
-	 * @param double a, double b, double c
+	 * @param a Seite a
+	 * @param b Seite b
+	 * @param c Seite c
 	 */
 	public Flaeche(double a, double b, double c) {
 		this.a = a;
@@ -40,7 +43,7 @@ public class Flaeche {
 
 	/**
 	 * Konstruktor fuer einen Kreis
-	 * @param double r
+	 * @param r Radius
 	 */
 	public Flaeche(double r) {
 		this.r = r;
@@ -48,7 +51,10 @@ public class Flaeche {
 
 	/**
 	 * Konstruktor fuer ein beliebiges Objekt
-	 * @param double a, double b, double c, double r
+	 * @param a Seite a
+	 * @param b Seite b
+	 * @param c Seite c
+	 * @param r Radius
 	 */
 	public Flaeche(double a, double b, double c, double r) {
 		this.a = a;
@@ -78,7 +84,7 @@ public class Flaeche {
 	 * @return double
 	 */
 	public double dreiecksFlaeche(){
-		double s=(a+b+c)/2);
+		double s=((a+b+c)/2);
 		return Math.sqrt(s*(s-a)*(s-b)*(s-c));
 	}
 }
