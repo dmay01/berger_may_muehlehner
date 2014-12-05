@@ -63,7 +63,7 @@ public class Raum {
 	 * @return Rauminhalt einer Pyramide
 	 */
 	public double pyramide(){
-		return (a*b*h)/3;
+		return (a*b*h)/3.0;
 	}
 	
 	/**
@@ -71,7 +71,7 @@ public class Raum {
 	 * @return Rauminhalt eines Kegels
 	 */
 	public double kegel(){
-		return (1/3)*(r*r*Math.PI)*h;
+		return (1.0/3.0)*(r*r*Math.PI)*h;
 	}
 
 	/**
