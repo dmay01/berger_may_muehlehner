@@ -4,7 +4,7 @@ package berger_may_muehlehner;
  * Klasse zur Berechnung von Flaechen
  * 
  * @author Muehlehner Moritz
- * @version 1.2
+ * @version 1.3
  */
 public class Flaeche {
 	private double a, b, c, r;
@@ -65,7 +65,7 @@ public class Flaeche {
 
 	/**
 	 * Berechnen der Rechtecksflaeche
-	 * @return double
+	 * @return double Rechtecksflaeche
 	 */
 	public double rechtecksFlaeche() {
 		return a * b;
@@ -73,7 +73,7 @@ public class Flaeche {
 
 	/**
 	 * Berechnen der Kreisflaeche
-	 * @return double
+	 * @return double Kreisflaeche
 	 */
 	public double kreisFlaeche() {
 		return Math.PI * (r * r);
@@ -81,10 +81,10 @@ public class Flaeche {
 
 	/**
 	 * Berechnen der Dreiecksflaeche
-	 * @return double
+	 * @return double Dreiecksflaeche
 	 */
 	public double dreiecksFlaeche(){
-		double s=((a+b+c)/2);
+		double s=((a+b+c)/2.0);
 		return Math.sqrt(s*(s-a)*(s-b)*(s-c));
 	}
 }
