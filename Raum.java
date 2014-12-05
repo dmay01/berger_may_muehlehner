@@ -7,15 +7,37 @@ package berger_may_muehlehner;
  */
 public class Raum {
 	
-	private double a, r, h;
+	private double a, b, c, r, h;
+	
+	/**
+	 * Standard Konstruktor
+	 */
+	public Raum(){
+		this.a=0;
+		this.b=0;
+		this.c=0;
+		this.r=0;
+		this.h=0;
+	}
 	
 	/**
 	 * Konstruktor
 	 */
-	public Raum(double a, double r, double h){
+	public Raum(double a, double b, double c, double r, double h){
 		this.a=a;
+		this.b=b;
+		this.c=c;
 		this.r=r;
 		this.h=h;
+	}
+	
+	/**
+	 * Konstruktor
+	 */
+	public Raum(double a, double b, double c){
+		this.a=a;
+		this.b=b;
+		this.c=c;
 	}
 	
 	/**
@@ -36,6 +58,6 @@ public class Raum {
 	 * Berechnung eines Quaders
 	 */
 	public double quader(){
-		return a*a*a;
+		return a*b*c;
 	}
 }
